@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,300;1,400&family=Ubuntu:wght@500&display=swap');
+
+
+:root {
+    --primary-color: #FCFCFC;
+    --secondary-color: #353535;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    overflow: hidden;
+}
+.container {
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+.app-name {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 3em 0 0 0;
+    text-align: center;
+}
+.footer {
+    text-align: center;
+    font-size: 14px;
+    color: var(--secondary-color);
+}
+.footer a{
+text-decoration: none;
+color: var(--secondary-color);
+font-weight: 600;
+}
+.form-container {
+width: 100%;
+padding: 3em;
+}
+.settings{
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.exchange-rate span {
+    font-weight: 600;
+}
+form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+input {
+    appearance: none;
+    border: 1px solid var(--secondary-color);
+    width: 18em;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 0 1em;
+    height: 34px;
+    font-weight: 500;
+}
+input::placeholder {
+    font-weight: 300;
+    font-size: 12px;
+}
+input:focus {
+    outline: 0;
+}
+select {
+    appearance: none;
+    border: 1px solid var(--secondary-color);
+    background-color: transparent;
+    padding: 0 1em;
+    height: 34px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+input::-webkit-inner-spin-button, 
+input::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+.disabled:disabled{
+    color: var(--secondary-color);
+    opacity: 1;
+}
+input, select {
+    margin: 10px 0;
+}
+button {
+   height: 35px;
+   width: 100px;
+   border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 0;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+@media(max-width: 450px) {
+    .form-container{
+        padding: 2em 0;
+    }
+    .exchange-rate{
+        width: 100%;
+        text-align: center;
+    }
+    
+}

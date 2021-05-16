@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/ico" href="./favicon.ico" />
+    <link rel="stylesheet" href="./style.css" />
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>Exchange calculator</title>
+  </head>
+  <body>
+    <div class="container">
+
+
+
+    <div class="app-name" >Exchange Rate Converter</div>
+    
+
+
+      <div class="form-container">           
+          <form id="exchageRateForm">
+
+            <div class="form-control">
+                <select  id="selectOne">
+                <option>---</option>
+                </select>
+             <input  type="number" id="amount-1" placeholder="Enter amount" >
+            </div>
+            <div class="settings">
+          <button id="btn" type="submit">Swap</button>
+
+                <div id="exchangeRate" class="exchange-rate">1 Currency = 1 Currency </div>
+              </div>
+
+  
+            <div class="form-control">
+             <select  id="selectTwo">
+                <option>---</option>
+             </select>
+             <input type="number" id="amount-2" placeholder="Enter amount" >
+            </div>
+          </form>
+        </div>
+
+    <div class="footer">
+        Developed by <a href="https://www.instagram.com/">Mohamed shibin</a><br>
+        Data collected @<a href="https://v6.exchangerate-api.com">Exchangerateapi.com</a> 
+    </div>
+    </div>  
+    <script src="./script.js"></script>
+  </body>
+</html>
